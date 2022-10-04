@@ -65,7 +65,7 @@ header {
   grid-column: 3/4;
   grid-row: 1/2;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -92,9 +92,12 @@ header {
 
 .section-1 {
   display: grid;
-  height: 100vh;
+  height: 80vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 10rem;
 }
 
 .section-1-div-1 {
@@ -159,8 +162,9 @@ span {
 }
 
 .div-anc {
-  margin-left: 20px;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .ach-1 {
@@ -169,7 +173,7 @@ span {
   padding: 15px;
   font-weight: lighter;
 }
-.ach-1:hover{
+.ach-1:hover {
   background-color: #ff5500cb;
 }
 
@@ -178,7 +182,6 @@ span {
 }
 
 .fancy-div {
-  position: absolute;
   left: 160px;
   bottom: 135px;
   margin-left: 20px;
@@ -194,7 +197,6 @@ span {
 
 .fancy-div::before {
   content: "";
-  position: absolute;
   top: -2px;
   left: -2px;
   width: 0;
@@ -253,7 +255,6 @@ span {
   }
 }
 
-
 /* --- start of CSS section-2 --- */
 
 .section-2 {
@@ -261,7 +262,7 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
-  height: 740px;
+  height: 110vh;
   width: 100%;
   min-width: 640px;
   box-sizing: content-box;
@@ -276,6 +277,7 @@ span {
   padding: 48px 13% 70px;
   position: relative;
   float: left;
+  cursor: pointer;
 }
 
 .cards span {
