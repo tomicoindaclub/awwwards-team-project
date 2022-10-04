@@ -40,7 +40,7 @@ select {
 /* --- start of CSS header --- */
 
 header {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -97,7 +97,7 @@ header {
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  padding: 5rem 10rem;
+  padding: 10rem;
 }
 
 .section-1-div-1 {
@@ -112,11 +112,14 @@ header {
 .section-1-div-2 {
   grid-column: 2/3;
   grid-row: 1/2;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-cooking {
-  width: 600px;
+  width: 90%;
   height: 500px;
+  object-fit: cover;
 }
 
 .hashtag {
@@ -137,7 +140,7 @@ header {
 }
 
 .sentence-p {
-  font-size: 50px;
+  font-size: 40px;
   margin-left: 20px;
   margin-top: 15px;
   line-height: 60px;
@@ -271,13 +274,13 @@ span {
 .cards {
   height: 100%;
   width: 100%;
-  display: grid;
+  display: block;
   justify-content: center;
   align-items: center;
-  padding: 48px 13% 70px;
   position: relative;
   float: left;
   cursor: pointer;
+  padding: 2rem 5rem;
 }
 
 .cards span {
@@ -286,6 +289,8 @@ span {
 
 .cardTitle {
   justify-content: left;
+  padding-bottom: 6rem;
+  padding-top: 1rem;
 }
 
 .cardTitle span {
@@ -293,16 +298,25 @@ span {
   font-size: 24px;
 }
 
+.cardTags {
+  padding-top: 8rem;
+}
 .cardTags span {
   color: rgba(0, 0, 0, 0.553);
   font-size: 18px;
 }
 
+.cardText {
+  padding-top: 1rem;
+}
 .cardText span {
   color: black;
   font-size: 24px;
 }
 
+.cardBottom {
+  padding-top: 1rem;
+}
 .cardBottom span {
   color: rgba(0, 0, 0, 0.553);
   font-size: 16px;
@@ -311,12 +325,18 @@ span {
 .cardIMG {
   justify-content: center;
   align-items: center;
+  object-fit: cover;
   display: flex;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .cardIMG img {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 80%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card-1 {
