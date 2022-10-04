@@ -88,6 +88,8 @@ header {
   list-style-type: none;
 }
 
+/* --- end of CSS header --- */
+
 .section-1 {
   display: grid;
   height: 100vh;
@@ -251,12 +253,6 @@ span {
   }
 }
 
-/* --- end of CSS header --- */
-
-/* --- start of CSS section-1 --- */
-
-
-/* --- end of CSS section-1 --- */
 
 /* --- start of CSS section-2 --- */
 
@@ -265,13 +261,10 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
-  height: 670px;
+  height: 740px;
   width: 100%;
   min-width: 640px;
-  flex-wrap: nowrap;
-  padding: 0px;
   box-sizing: content-box;
-
 }
 
 .cards {
@@ -279,10 +272,36 @@ span {
   display: grid;
   justify-content: center;
   align-items: center;
+  padding: 10%;
+}
+
+.cards span {
+  margin: 0;
 }
 
 .cardTitle {
-  justify-self: center;  
+  justify-self: left;
+}
+
+.cardTitle span {
+  color: black;
+  font-size: 24px;
+}
+
+.cardTags span {
+  color: rgba(0, 0, 0, 0.553);
+  font-size: 16px;
+}
+
+.cardText span {
+  color: black;
+  font-size: 24px;
+}
+
+.cardBottom span {
+  color: rgba(0, 0, 0, 0.553);
+  font-size: 16px;
+  font-style: initial;
 }
 
 .cardIMG {
@@ -300,17 +319,11 @@ span {
   background-color: #ff5700;
 }
 
-.imgC1 {
-
-}
-
 .card-2 {
-  height: 100%;
   background-color: #c49dff;
 }
 
 .card-3 {
-  height: 100%;
   background-color: #ffbfa5;
 }
 
