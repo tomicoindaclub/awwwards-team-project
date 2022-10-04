@@ -37,6 +37,8 @@ select {
 
 /* --- end of CSS reset --- */
 
+/* --- start of CSS header --- */
+
 header {
   width: 100vw;
   height: 100px;
@@ -74,3 +76,68 @@ header {
   justify-content: space-evenly;
   list-style-type: none;
 }
+
+/* --- end of CSS header --- */
+
+/* --- start of CSS section-1 --- */
+
+
+/* --- end of CSS section-1 --- */
+
+/* --- start of CSS section-2 --- */
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  height: 670px;
+  width: 100%;
+  min-width: 640px;
+  flex-wrap: nowrap;
+  padding: 0px;
+  box-sizing: content-box;
+
+}
+
+.cards {
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardTitle {
+  justify-self: center;  
+}
+
+.cardIMG {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.cardIMG img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.card-1 {
+  background-color: #ff5700;
+}
+
+.imgC1 {
+
+}
+
+.card-2 {
+  height: 100%;
+  background-color: #c49dff;
+}
+
+.card-3 {
+  height: 100%;
+  background-color: #ffbfa5;
+}
+
+/* --- end of CSS section-2 --- */
