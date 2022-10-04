@@ -269,10 +269,13 @@ span {
 
 .cards {
   height: 100%;
+  width: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 10%;
+  padding: 48px 13% 70px;
+  position: relative;
+  float: left;
 }
 
 .cards span {
@@ -280,7 +283,7 @@ span {
 }
 
 .cardTitle {
-  justify-self: left;
+  justify-content: left;
 }
 
 .cardTitle span {
@@ -290,7 +293,7 @@ span {
 
 .cardTags span {
   color: rgba(0, 0, 0, 0.553);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .cardText span {
@@ -301,7 +304,6 @@ span {
 .cardBottom span {
   color: rgba(0, 0, 0, 0.553);
   font-size: 16px;
-  font-style: initial;
 }
 
 .cardIMG {
