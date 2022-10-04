@@ -80,6 +80,7 @@ header {
   color: gray;
   font-size: 18px;
   font-weight: lighter;
+  transition: all ease-in-out 0.3s;
 }
 
 .div2 ul {
@@ -265,7 +266,7 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
-  height: 110vh;
+  height: 100vh;
   width: 100%;
   min-width: 640px;
   box-sizing: content-box;
@@ -285,33 +286,38 @@ span {
 
 .cards span {
   margin: 0;
+  color: black;
 }
 
 .cardTitle {
   justify-content: left;
   padding-bottom: 6rem;
   padding-top: 1rem;
+  transition: all ease-in-out 0.5s;
 }
 
 .cardTitle span {
   color: black;
   font-size: 24px;
+  transition: all ease-in-out 0.5s;
 }
 
 .cardTags {
   padding-top: 8rem;
+  transition: all ease-in-out 0.5s;
 }
 .cardTags span {
   color: rgba(0, 0, 0, 0.553);
   font-size: 18px;
+  transition: all ease-in-out 0.5s;
 }
 
 .cardText {
   padding-top: 1rem;
 }
 .cardText span {
-  color: black;
   font-size: 24px;
+  transition: all ease-in-out 0.5s;
 }
 
 .cardBottom {
@@ -320,6 +326,7 @@ span {
 .cardBottom span {
   color: rgba(0, 0, 0, 0.553);
   font-size: 16px;
+  transition: all ease-in-out 0.5s;
 }
 
 .cardIMG {
@@ -333,22 +340,132 @@ span {
 }
 
 .cardIMG img {
-  max-width: 80%;
-  height: 80%;
+  max-width: 70%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: all ease-in-out 0.5s;
 }
 
 .card-1 {
   background-color: #ff5700;
+  transition: all ease-in-out 0.5s;
 }
 
 .card-2 {
   background-color: #c49dff;
+  transition: all ease-in-out 0.5s;
 }
 
 .card-3 {
   background-color: #ffbfa5;
+  transition: all ease-in-out 0.5s;
 }
 
 /* --- end of CSS section-2 --- */
+
+/* --- hover effects --- */
+
+.header-a:hover {
+  color: black;
+  transition: all ease-in-out 0.3s;
+}
+
+.card-1:hover {
+  background-color: #ff2600;
+  transition: all ease-in-out 0.5s;
+}
+.card-1:hover .cardIMG img {
+  max-width: 90%;
+  transition: all ease-in-out 0.5s;
+}
+.card-1:hover .cardBottom span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-1:hover .cardText span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-1:hover .cardTags span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-1:hover .cardTags {
+  padding-top: 4rem !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-1:hover .cardTitle span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-1:hover .cardTitle {
+  padding-bottom: 2rem !important;
+  transition: all ease-in-out 0.5s;
+}
+
+.card-2:hover {
+  background-color: #924cfa;
+  transition: all ease-in-out 0.5s;
+}
+.card-2:hover .cardIMG img {
+  max-width: 90%;
+  transition: all ease-in-out 0.5s;
+}
+.card-2:hover .cardBottom span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-2:hover .cardText span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-2:hover .cardTags span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-2:hover .cardTags {
+  padding-top: 4rem !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-2:hover .cardTitle span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-2:hover .cardTitle {
+  padding-bottom: 2rem !important;
+  transition: all ease-in-out 0.5s;
+}
+
+.card-3:hover {
+  background-color: #ff966c;
+  transition: all ease-in-out 0.5s;
+}
+.card-3:hover .cardIMG img {
+  max-width: 90%;
+  transition: all ease-in-out 0.5s;
+}
+.card-3:hover .cardBottom span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-3:hover .cardText span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-3:hover .cardTags span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-3:hover .cardTags {
+  padding-top: 4rem !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-3:hover .cardTitle span {
+  color: white !important;
+  transition: all ease-in-out 0.5s;
+}
+.card-3:hover .cardTitle {
+  padding-bottom: 2rem !important;
+  transition: all ease-in-out 0.5s;
+}
