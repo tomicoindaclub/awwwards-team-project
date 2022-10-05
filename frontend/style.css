@@ -468,3 +468,26 @@ span {
   padding-bottom: 2rem !important;
   transition: all ease-in-out 0.5s;
 }
+
+/* --- END of hover effects --- */
+
+/* --- preloader CSS --- */
+
+.pre-main {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f2f3;
+}
+
+.pre-div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.pre-img {
+  min-width: 10%;
+}
+
+/* --- END of preloader CSS --- */
