@@ -1,5 +1,11 @@
 const htmlPage = `
-    <header>
+<div class="pre-main">
+    <div class="pre-div">
+        <img class="pre-img" src="img/preloader.gif" alt="preloader" />
+    </div>
+</div>
+
+<header>
       <div class="div1">
         <a href="#"><img src="./img/logo.svg" alt="logo" /></a>
       </div>
@@ -140,13 +146,13 @@ const htmlPage = `
       </section>
     </main>
     `;
-const preloader = `
-    <div class="pre-main">
-      <div class="pre-div">
-        <img class="pre-img" src="img/preloader.gif" alt="preloader" />
-      </div>
-    </div>
-    `;
 
 const rootElement = document.querySelector("#root");
 rootElement.insertAdjacentHTML("beforeend", htmlPage);
+
+window.addEventListener("load", function () {
+    setTimeout(function(){
+        const loader = document.querySelector(".pre-main");
+        loader.style.display = "none";
+    },3000)
+});
