@@ -1,4 +1,8 @@
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    const loader = document.querySelector(".preloader");
+    loader.style.display = "none";
+  }, 3000);
   const rootElement = document.querySelector("#root");
   rootElement.insertAdjacentHTML("beforeend", `
   <div class="preloader">
@@ -63,10 +67,16 @@ window.addEventListener("load", function(){
             </div>
   
             <div class="div-anc">
-              <a class="ach-1" href="">Skaityti daugiau</a>
-              <div class="fancy-div">
-                <a class="ach-2 fancy-link" href="">Visi straipsniai</a>
-              </div>
+              <a id="ach-1" href="">Skaityti daugiau</a>
+              <div class="svg-wrapper">
+              <svg height="166" width="166" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="83" cy="83" r="55" class="shape" height="66" width="66"></circle>
+              <div class="text">Visi straipsniai</div>
+              </svg>
+
+        </div>
+                
+         
             </div>
           </div>
           <div class="section-1-div-2">
@@ -104,7 +114,7 @@ window.addEventListener("load", function(){
               <span>Sielai</span>
             </div>
             <div class="cardIMG imgC2">
-              <img
+              <img class="kep1"
                 src="https://mieloji.lt/wp-content/uploads/2022/01/Motinyste_pagrindine_Migles-Silvos-nuotr.-700x1050.jpg"
                 alt=""
               />
@@ -146,7 +156,7 @@ window.addEventListener("load", function(){
         </section>
       </main>
       ` );
-
+  
 });
 
 
@@ -156,9 +166,21 @@ window.addEventListener("load", function(){
 
 
 
-window.addEventListener("load", function () {
-    setTimeout(function(){
-        const loader = document.querySelector(".preloader");
-        loader.style.display = "none";
-    },3000)
+/* window.addEventListener("load", function () {
+  
+}); */
+
+
+const kepdoboz = document.querySelector(".cards");
+const kep = document.querySelector(".kep1");
+const lista = document.querySelector(".cards");
+for(let i = 0; i < kep.length; i++){
+  kep[i].addEventListener("mouseover", function(){
+    if(lista.classList.contains("color")){
+      kepdoboz.classList.add("color");
+      
+    }else {
+      kepdoboz.classList.remove("color");
+    }
+}
 });
